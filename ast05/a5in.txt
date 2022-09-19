@@ -1,0 +1,34 @@
+#------------------------------------
+#  CS 218 - Assignment #5
+#  Debugger Input Script
+#------------------------------------
+echo \n\n
+break last
+run
+set pagination off
+set logging file a4out.txt
+set logging overwrite
+set logging on
+set prompt
+echo ------------------------------------ \n
+echo display variables \n
+echo \n
+echo Surface Areas\n
+print/d (int [49])surfaceAreas
+echo Volumes\n
+print/d (int [49])volumes
+echo \n
+printf "vMin: %d\n\n", (int)vMin
+printf "vEstMed: %d\n", (int)vEstMed
+printf "vMax: %d\n", (int)vMax
+printf "vSum: %d\n", (int)vSum
+printf "vAve: %d\n", (int)vAve
+echo \n
+printf "saMin: %d\n", (int)saMin
+printf "saEstMed: %d\n", (int)saEstMed
+printf "saMax: %d\n", (int)saMax
+printf "saSum: %d\n", (int)saSum
+printf "saAve: %d\n", (int)saAve
+echo \n \n
+set logging off
+quit
