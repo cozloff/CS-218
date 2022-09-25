@@ -1,0 +1,25 @@
+#------------------------------------
+#  CS 218 - Assignment #6
+#  Debugger Input Script
+#------------------------------------
+echo \n\n
+break last
+run
+set pagination off
+set logging file a6out.txt
+set logging overwrite
+set logging on
+set prompt
+echo ------------------------------------ \n
+printf "length: %d\n", (int)length
+echo \n
+echo diamsArray\n
+print/d (int [34])diamsArray
+echo \n
+printf "diamSum: %d\n", (int)diamSum	
+printf "diamAve: %d\n", (int)diamAve
+printf "diamMin: %d\n", (int)diamMin
+printf "diamMax: %d\n", (int)diamMax
+echo \n \n
+set logging off
+quit
