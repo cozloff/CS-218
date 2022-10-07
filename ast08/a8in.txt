@@ -1,0 +1,66 @@
+#------------------------------------
+# CS 218 - Assignment #8
+#  Debugger Input Script
+#------------------------------------
+echo \n\n
+break last
+run
+set pagination off
+set logging file a8out.txt
+set logging overwrite
+set logging on
+set prompt
+echo ------------------------------------ \n
+echo display variables \n
+echo \n
+x/13dw &xList_1
+echo \n
+x/13dw &yList_1
+echo \n
+x/50dw &xList_2
+echo \n
+x/50dw &yList_2
+echo \n
+x/100dw &xList_3
+echo \n
+x/100dw &yList_3
+echo \n
+echo len_1:\t
+x/dw &len_1
+echo \n
+echo xMin_1:\t
+x/dw &xMin_1
+echo xMed_1:\t
+x/dw &xMed_1
+echo xMed_3:\t
+x/dw &xMed_3
+echo xMax_1:\t
+x/dw &xMax_1
+echo xSum_1:\t
+x/dw &xSum_1
+echo xAve_1:\t
+x/dw &xAve_1
+echo yMin_1:\t
+x/dw &yMin_1
+echo yMed_1:\t
+x/dw &yMed_1
+echo yMax_1:\t
+x/dw &yMax_1
+echo ySum_1:\t
+x/dw &ySum_1
+echo yAve_1:\t
+x/dw &yAve_1
+echo b0_1:\t
+x/dw &b0_1
+echo b1_1:\t
+x/dw &b1_1
+echo b0_2:\t
+x/dw &b0_2
+echo b1_2:\t
+x/dw &b1_2
+echo b0_3:\t
+x/dw &b0_3
+echo b1_3:\t
+x/dw &b1_3
+echo \n \n
+set logging off
