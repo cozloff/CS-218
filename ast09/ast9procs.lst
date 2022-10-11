@@ -1,0 +1,246 @@
+     1                                 %line 1+1 ast9procs.asm
+     2                                 
+     3                                 
+     4                                 
+     5                                 
+     6                                 
+     7                                 
+     8                                 
+     9                                 
+    10                                 
+    11                                 
+    12                                 
+    13                                 
+    14                                 
+    15                                 
+    16                                 
+    17                                 
+    18                                 
+    19                                 
+    20                                 
+    21                                 
+    22                                 
+    23                                 
+    24                                 
+    25                                 
+    26                                 
+    27                                 
+    28                                 
+    29                                 
+    30                                 
+    31                                 
+    32                                 
+    33                                 
+    34                                 
+    35                                 [section .data]
+    36                                 
+    37                                 
+    38                                 
+    39                                 
+    40                                 TRUE equ 1
+    41                                 FALSE equ 0
+    42                                 
+    43                                 EXIT_SUCCESS equ 0
+    44                                 
+    45                                 STDIN equ 0
+    46                                 STDOUT equ 1
+    47                                 STDERR equ 2
+    48                                 
+    49                                 SYS_read equ 0
+    50                                 SYS_write equ 1
+    51                                 SYS_open equ 2
+    52                                 SYS_close equ 3
+    53                                 SYS_fork equ 57
+    54                                 SYS_exit equ 60
+    55                                 SYS_creat equ 85
+    56                                 SYS_time equ 201
+    57                                 
+    58                                 LF equ 10
+    59                                 SPACE equ " "
+    60                                 NULL equ 0
+    61                                 ESC equ 27
+    62                                 
+    63                                 
+    64                                 
+    65                                 
+    66                                 SUCCESS equ 0
+    67                                 NOSUCCESS equ 1
+    68                                 OUTOFRANGEMIN equ 2
+    69                                 OUTOFRANGEMAX equ 3
+    70                                 INPUTOVERFLOW equ 4
+    71                                 ENDOFINPUT equ 5
+    72                                 
+    73                                 LIMIT equ 1510
+    74                                 
+    75                                 MIN equ -100000
+    76                                 MAX equ 100000
+    77                                 
+    78                                 BUFFSIZE equ 50
+    79                                 
+    80                                 
+    81                                 
+    82                                 
+    83                                 
+    84                                 
+    85                                 
+    86                                 [section .text]
+    87                                 
+    88                                 
+    89                                 
+    90                                 
+    91                                 
+    92                                 
+    93                                 
+    94                                 
+    95                                 
+    96                                 
+    97                                 
+    98                                 
+    99                                 
+   100                                 
+   101                                 
+   102                                 
+   103                                 
+   104                                 
+   105                                 
+   106                                 
+   107                                 
+   108                                 
+   109                                 
+   110                                 
+   111                                 
+   112                                 [global readSeptNum]
+   113                                 readSeptNum:
+   114                                 
+   115 00000000 C3                      ret
+   116                                 
+   117                                 
+   118                                 
+   119                                 
+   120                                 
+   121                                 
+   122                                 
+   123                                 
+   124                                 
+   125                                 
+   126                                 
+   127                                 
+   128                                 
+   129                                 
+   130                                 
+   131                                 
+   132                                 
+   133                                 
+   134                                 [global shellSort]
+   135                                 shellSort:
+   136                                 
+   137 00000001 C3                      ret
+   138                                 
+   139                                 
+   140                                 
+   141                                 
+   142                                 
+   143                                 
+   144                                 
+   145                                 
+   146                                 
+   147                                 
+   148                                 
+   149                                 
+   150                                 
+   151                                 
+   152                                 
+   153                                 
+   154                                 
+   155                                 
+   156                                 
+   157                                 
+   158                                 
+   159                                 
+   160                                 
+   161                                 
+   162                                 
+   163                                 
+   164                                 [global basicStats]
+   165                                 basicStats:
+   166                                 
+   167 00000002 C3                      ret
+   168                                 
+   169                                 
+   170                                 
+   171                                 
+   172                                 
+   173                                 
+   174                                 
+   175                                 
+   176                                 
+   177                                 
+   178                                 
+   179                                 
+   180                                 
+   181                                 
+   182                                 
+   183                                 
+   184                                 
+   185                                 
+   186                                 
+   187                                 [global lstSum]
+   188                                 lstSum:
+   189                                 
+   190 00000003 C3                      ret
+   191                                 
+   192                                 
+   193                                 
+   194                                 
+   195                                 
+   196                                 
+   197                                 
+   198                                 
+   199                                 
+   200                                 
+   201                                 
+   202                                 
+   203                                 
+   204                                 
+   205                                 
+   206                                 
+   207                                 
+   208                                 
+   209                                 
+   210                                 
+   211                                 [global lstAve]
+   212                                 lstAve:
+   213                                 
+   214 00000004 C3                      ret
+   215                                 
+   216                                 
+   217                                 
+   218                                 
+   219                                 
+   220                                 
+   221                                 
+   222                                 
+   223                                 
+   224                                 
+   225                                 
+   226                                 
+   227                                 
+   228                                 
+   229                                 
+   230                                 
+   231                                 
+   232                                 
+   233                                 
+   234                                 
+   235                                 
+   236                                 
+   237                                 
+   238                                 
+   239                                 
+   240                                 [global linearRegression]
+   241                                 linearRegression:
+   242                                 
+   243 00000005 C3                      ret
+   244                                 
+   245                                 
+   246                                 
