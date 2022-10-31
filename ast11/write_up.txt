@@ -1,0 +1,48 @@
+; *****************************************************************
+;  Name: Dylan Cozloff
+;  NSHE ID: 2001668380
+;  Section: 1003
+;  Assignment: 11B
+;  Description:  Compares the run times of utilizing two different buffer sizes, to read and write image data into a thumbnail. 
+*****************************************************************
+
+Machine Description:
+--------------------
+<machine type (desktop/laptop/mini), processor speed, disk type (ssd, hard-drive, etc.) and memory>
+
+For this assignment I am working on a desktop, with 3.6 GHz processor speed, a SSD, and 16 GB RAM. 
+
+
+Timing:
+-------
+Large Buffer
+Average Real Time:
+( 0.592 + 0.533 ) / 2 = 0.5625 seconds 
+
+Small Buffer
+Average Real Time:
+( 14.712 + 14.722 ) / 2 = 14.717 seconds 
+
+Percentage Change:
+
+[(14.717 - 0.5625) / 0.5625 ] * 100 = 2516.36 % change 
+
+
+
+Explanation:
+------------
+<not to exceed 200 words>
+The 750,000 buffer significantly reduces the overhead associated with system calls. Every time my 
+program makes a file read system call into the buffer it pauses my program and turns over control 
+to the OS. The OS has to ensure the file descriptor is valid and then pass the request to my SSD 
+via the system bus. After the controller obtains the requested data it places it directly into 
+main memory location as instructed by the OS, again having to access the system bus to perform 
+the transfer. Once the SSD controller has completed the transfer, it notifies the OS. The OS will 
+then resume my program. This entire process represents system overhead 250,000 times over for my 
+three-buffer size program where it is just waiting for the completion of the system service 
+requests. My 750,000-buffer-size program is much faster because it requires much fewer system 
+service calls. 
+
+
+
+
